@@ -4,8 +4,7 @@ pipeline {
   tools {nodejs "node"}
   stages {
     stage('Build') {
-      steps {
-        git 'https://github.com/patebija/simple-no...
+      steps { 
         sh 'npm install'
       }
     }
